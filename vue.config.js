@@ -1,7 +1,8 @@
 const path = require('path')
 
 module.exports = {
-  publicPath: 'https://portal-servidorap.herokuapp.com/',
+  publicPath: '/',
+  mode: 'production',
   css: {
     loaderOptions: {
       sass: {
