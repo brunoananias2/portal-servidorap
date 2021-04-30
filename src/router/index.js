@@ -22,7 +22,7 @@ const router = new VueRouter({
     return { x: 0, y: 0 }
   },
   routes: [
-    { path: '/', redirect: { name: 'contracheque' } },
+    { path: 'https://portal-servidorap.herokuapp.com/', redirect: { name: 'contracheque' } },
     ...apps,
     ...dashboard,
     ...menu,
