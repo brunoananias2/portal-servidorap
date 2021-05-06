@@ -27,7 +27,7 @@
       <b-form-input
         v-if="showSearchBar"
         v-model="searchQuery"
-        placeholder="Explore Vuexy"
+        placeholder="Pesquisar"
         autofocus
         autocomplete="off"
         @keyup.up="increaseIndex(false)"
@@ -74,7 +74,7 @@
               @mousedown.prevent="suggestionSelected(grp_name, suggestion)"
             >
               <b-link
-                v-if="grp_name === 'pages'"
+                v-if="grp_name === 'paginas'"
                 class="p-0"
               >
                 <feather-icon
@@ -166,7 +166,7 @@ export default {
           /* eslint-enable */
         }
       }
-      if (grpName === 'pages') router.push(suggestion.route).catch(() => {})
+      if (grpName === 'paginas') router.push(suggestion.route).catch(() => {})
       // eslint-disable-next-line no-use-before-define
       resetsearchQuery()
       showSearchBar.value = false

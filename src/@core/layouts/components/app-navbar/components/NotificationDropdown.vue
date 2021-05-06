@@ -18,13 +18,13 @@
     <li class="dropdown-menu-header">
       <div class="dropdown-header d-flex">
         <h4 class="notification-title mb-0 mr-auto">
-          Notifications
+          Notificações
         </h4>
         <b-badge
           pill
           variant="light-primary"
         >
-          6 New
+          1 Nova
         </b-badge>
       </div>
     </li>
@@ -62,7 +62,7 @@
       <!-- System Notification Toggler -->
       <div class="media d-flex align-items-center">
         <h6 class="font-weight-bolder mr-auto mb-0">
-          System Notifications
+          Habilitar Notificações
         </h6>
         <b-form-checkbox
           :checked="true"
@@ -71,7 +71,7 @@
       </div>
 
       <!-- System Notifications -->
-      <b-link
+      <!-- <b-link
         v-for="notification in systemNotifications"
         :key="notification.subtitle"
       >
@@ -91,7 +91,7 @@
           </p>
           <small class="notification-text">{{ notification.subtitle }}</small>
         </b-media>
-      </b-link>
+      </b-link> -->
     </vue-perfect-scrollbar>
 
     <!-- Cart Footer -->
@@ -99,7 +99,7 @@
       v-ripple.400="'rgba(255, 255, 255, 0.15)'"
       variant="primary"
       block
-    >Read all notifications</b-button>
+    >Veja todas as Notificações</b-button>
     </li>
   </b-nav-item-dropdown>
 </template>
@@ -129,22 +129,10 @@ export default {
     /* eslint-disable global-require */
     const notifications = [
       {
-        title: 'Congratulation Sam 🎉',
+        title: 'Teste de Notificação 🎉',
         avatar: require('@/assets/images/avatars/6-small.png'),
-        subtitle: 'Won the monthly best seller badge',
+        subtitle: 'Testando notificações',
         type: 'light-success',
-      },
-      {
-        title: 'New message received',
-        avatar: require('@/assets/images/avatars/9-small.png'),
-        subtitle: 'You have 10 unread messages',
-        type: 'light-info',
-      },
-      {
-        title: 'Revised Order 👋',
-        avatar: 'MD',
-        subtitle: 'MD Inc. order updated',
-        type: 'light-danger',
       },
     ]
     /* eslint-disable global-require */

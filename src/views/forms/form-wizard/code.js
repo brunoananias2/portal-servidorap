@@ -247,7 +247,7 @@ export const codeIcon = `
                 plain
               >
                 <b-img
-                  :src="require('@/assets/images/images/pages/PayPal_logo.png')"
+                  :src="require('@/assets/images/images/pages/PayPal_logo2.png')"
                   alt="PayPal Logo"
                 />
               </b-form-radio>

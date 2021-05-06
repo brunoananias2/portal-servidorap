@@ -149,7 +149,7 @@ export default {
     return {
       show: false,
       loading: false,
-      selected: '4',
+      selected: '5',
       options: [
         { value: '1', text: 'Janeiro' },
         { value: '2', text: 'Fevereiro' },
@@ -188,7 +188,7 @@ export default {
   opacity: 0;
 }
 .top-contracheque{
-  background: #7367f0;
+  background: #00cfe8;
   height: 2rem;
 }
 .top-contracheque h4{

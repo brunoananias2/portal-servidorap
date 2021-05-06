@@ -4,8 +4,11 @@
 
       <!-- Brand logo-->
       <b-link class="brand-logo">
-        <vuexy-logo />
-        <h2 class="brand-text text-primary ml-1">
+        <b-img
+            class="logo-nova"
+            :src="logoNova"
+          />
+        <h2 class="brand-text2 text-primary ml-1">
           Portal do Servidor
         </h2>
       </b-link>
@@ -102,7 +105,7 @@
               <!-- forgot password -->
               <b-form-group>
                 <div class="d-flex justify-content-between">
-                  <label for="login-password">Password</label>
+                  <label for="login-password">Senha</label>
                   <b-link :to="{name:'auth-forgot-password'}">
                     <small>Esqueceu a senha?</small>
                   </b-link>
@@ -169,14 +172,14 @@
           </b-card-text> -->
 
           <!-- divider -->
-          <div class="divider my-2">
+          <!-- <div class="divider my-2">
             <div class="divider-text">
               or
             </div>
-          </div>
+          </div> -->
 
           <!-- social buttons -->
-          <div class="auth-footer-btn d-flex justify-content-center">
+          <!-- <div class="auth-footer-btn d-flex justify-content-center">
             <b-button
               variant="facebook"
               href="javascript:void(0)"
@@ -201,7 +204,7 @@
             >
               <feather-icon icon="GithubIcon" />
             </b-button>
-          </div>
+          </div> -->
         </b-col>
       </b-col>
     <!-- /Login-->
@@ -212,7 +215,7 @@
 <script>
 /* eslint-disable global-require */
 import { ValidationProvider, ValidationObserver } from 'vee-validate'
-import VuexyLogo from '@core/layouts/components/Logo.vue'
+// import VuexyLogo from '@core/layouts/components/Logo.vue'
 import {
   BRow, BCol, BLink, BFormGroup, BFormInput, BInputGroupAppend, BInputGroup, BFormCheckbox, BCardText, BCardTitle, BImg, BForm, BButton, BAlert, VBTooltip,
 } from 'bootstrap-vue'
@@ -243,7 +246,7 @@ export default {
     BForm,
     BButton,
     BAlert,
-    VuexyLogo,
+    // VuexyLogo,
     ValidationProvider,
     ValidationObserver,
   },
@@ -254,6 +257,7 @@ export default {
       password: 'admin',
       userEmail: 'admin@demo.com',
       sideImg: require('@/assets/images/pages/login-v2.svg'),
+      logoNova: require('@/assets/images/logo/logo2.png'),
 
       // validation rules
       required,

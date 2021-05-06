@@ -17,16 +17,16 @@
     </ul>
 
     <!-- Left Col -->
-    <div class="bookmark-wrapper align-items-center flex-grow-1 d-none d-lg-flex">
+    <div class="nav bookmark-wrapper align-items-center flex-grow-1 d-none d-lg-flex">
 
       <!-- Bookmarks Container -->
-      <bookmarks />
+      <search-bar />
+      <!-- <bookmarks /> -->
     </div>
 
     <b-navbar-nav class="nav align-items-center ml-auto">
       <locale />
       <dark-Toggler class="d-none d-lg-block" />
-      <search-bar />
       <cart-dropdown />
       <notification-dropdown />
       <user-dropdown />
@@ -38,7 +38,7 @@
 import {
   BLink, BNavbarNav,
 } from 'bootstrap-vue'
-import Bookmarks from './components/Bookmarks.vue'
+// import Bookmarks from './components/Bookmarks.vue'
 // import Locale from './components/Locale.vue'
 import SearchBar from './components/SearchBar.vue'
 import DarkToggler from './components/DarkToggler.vue'
@@ -52,7 +52,7 @@ export default {
 
     // Navbar Components
     BNavbarNav,
-    Bookmarks,
+    // Bookmarks,
     // Locale,
     SearchBar,
     DarkToggler,

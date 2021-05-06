@@ -1,7 +1,7 @@
 /* eslint-disable */
 // prettier-ignore
 export default {
-  pages: {
+  paginas: {
     key: 'title',
     data: [
       { title: 'Access Control', route: { name: 'access-control' }, icon: 'ShieldIcon', isBookmarked: false },
@@ -36,6 +36,7 @@ export default {
       { title: 'Colors', route: { name: 'ui-colors' }, icon: 'DropletIcon', isBookmarked: false },
       { title: 'Coming Soon', route: { name: 'misc-coming-soon' }, icon: 'ClockIcon', isBookmarked: false },
       { title: 'Context Menu', route: { name: 'extensions-context-menu' }, icon: 'MoreVerticalIcon', isBookmarked: false },
+      { title: 'Contracheques', route: { name: 'contracheque' }, icon: 'DollarSignIcon', isBookmarked: false },
       { title: 'Dashboard Analytics', route: { name: 'dashboard-analytics' }, icon: 'ActivityIcon', isBookmarked: false },
       { title: 'Dashboard ECommerce', route: { name: 'dashboard-ecommerce' }, icon: 'ShoppingCartIcon', isBookmarked: false },
       { title: 'Date Time Picker', route: { name: 'extensions-date-time-picker' }, icon: 'ClockIcon', isBookmarked: false },
