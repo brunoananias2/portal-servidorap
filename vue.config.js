@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-  publicPath: '/sindrapeportal',
+  publicPath: '/',
   css: {
     loaderOptions: {
       sass: {
