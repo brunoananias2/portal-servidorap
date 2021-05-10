@@ -22,7 +22,7 @@ const router = new VueRouter({
     return { x: 0, y: 0 }
   },
   routes: [
-    { path: '/', redirect: { name: 'contracheque' } },
+    { path: '/', redirect: { name: 'inicio' } },
     ...apps,
     ...dashboard,
     ...menu,

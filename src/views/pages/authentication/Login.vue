@@ -58,12 +58,9 @@
               <p>
                 <small class="mr-50"><span class="font-weight-bold">Admin:</span> admin@demo.com | admin</small>
               </p>
-              <p>
-                <small class="mr-50"><span class="font-weight-bold">Client:</span> client@demo.com | client</small>
-              </p>
             </div>
             <feather-icon
-              v-b-tooltip.hover.left="'This is just for ACL demo purpose'"
+              v-b-tooltip.hover.left="'Credenciais de Teste'"
               icon="HelpCircleIcon"
               size="18"
               class="position-absolute"
@@ -303,7 +300,7 @@ export default {
                     component: ToastificationContent,
                     position: 'top-right',
                     props: {
-                      title: `Bem vindo ${userData.fullName || userData.username}`,
+                      title: `Bem-vindo ${userData.fullName || userData.username}`,
                       icon: 'CoffeeIcon',
                       variant: 'success',
                       text: `Você fez login com sucesso como ${userData.role}. `,

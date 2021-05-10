@@ -1,5 +1,10 @@
 export default [
   {
+    title: 'Inicio',
+    icon: 'HomeIcon',
+    route: 'inicio',
+  },
+  {
     title: 'Contracheques',
     icon: 'DollarSignIcon',
     route: 'contracheque',
